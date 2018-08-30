@@ -1,6 +1,6 @@
 # Spinneys Egypt (promotional products) scraper
 
-I'm just playing around with Scrappy, and Spinneys seemed like a good place to start.
+I'm just playing around with Scrapy, and Spinneys seemed like a good place to start.
 
 ## Install
 
