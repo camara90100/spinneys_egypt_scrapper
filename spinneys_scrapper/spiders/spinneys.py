@@ -20,18 +20,12 @@ class SpinneysSpider(scrapy.Spider):
 
 
     def extract_category(self, response):
-        self.log("extracting category at " + response.url)
         # the right category should be the active one.
         for li in response.css('li.cat'):
             if li.css('a.active'):
                 return li.css('span::text').extract_first().strip()
     
-    def extract_products(self, response, category):           
-        self.log("extracting product at " + response.url)
-
-
     def parse(self, response):
-        self.log("parse at " + response.url)
         category = self.extract_category(response)
         for product in response.css('.Image_Wrapper'):
             img = response.url + product.css('a').css('img::attr(src)').extract_first()
