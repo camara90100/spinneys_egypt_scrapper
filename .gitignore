@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Coding environment folders
+.idea/
+.vscode/
+
+# virtual environments
+env/
+
+# scrapy stuff
+build/
+dist/
+groceries/build/
+project.egg-info/
+sites/
+.pytest_cache/
+
+results.json
+
+# Meta stuff
+*.DS_STORE
+
+#ignore outpout json.
+spinneys.json
